@@ -18,4 +18,7 @@ public class Manager {
         }
         return s;
     }
+    public void logMeal(int month, int day, int id){
+        //loop thru all students and find matching id
+    }
 }

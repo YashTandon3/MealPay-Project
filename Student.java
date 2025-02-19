@@ -39,6 +39,14 @@ public ArrayList<Transaction> getTransactionsByDate(int month, int day){
     }
 }
 
+public int getID(){
+    return id;
+}
+
+public String getName(){
+    return name;
+}
+
 
     public String toString(){
         return "Name: " + name + "ID: " + "Balance " + balance + " Transactions: " + transactions.toString();
