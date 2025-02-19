@@ -24,6 +24,20 @@ public void chargeLunch(int month, int day){
     transactions.add(t);
 }
 
+//return null of there are no transactions on that day
+public ArrayList<Transaction> getTransactionsByDate(int month, int day){
+    ArrayList<Transaction> givenDay = new ArrayList<Transaction>();
+    for(Transaction t : transactions){
+        if(month == t.getMonth() && day == t.getDay()){
+            givenDay.add(t);
+        }
+    }
+    if(givenDay.size() == 0){
+        return null;
+    } else {
+        return givenDay;
+    }
+}
 
 
     public String toString(){
