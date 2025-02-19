@@ -20,5 +20,10 @@ public class Manager {
     }
     public void logMeal(int month, int day, int id){
         //loop thru all students and find matching id
+        for(int i = 0; i<students.size();i++){
+            if(students.get(i).getID() == id){
+                students.get(i).chargeLunch(month, day);
+            }
+        }
     }
 }
