@@ -26,4 +26,15 @@ public class Manager {
             }
         }
     }
+
+    public void getallStudents(){
+        for(int i = 0; i< students.size(); i++){
+            System.out.println(students.get(i).toString());
+        }
+    }
+
+    public void addStudents(String name){
+        Student p = new Student(name);
+        students.add(p);
+    }
 }
