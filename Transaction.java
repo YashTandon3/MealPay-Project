@@ -6,7 +6,7 @@ public class Transaction{
     
 
 
-    public Transaction(int myamount, int mymonth, int myday){
+    public Transaction(int mymonth, int myday, int myamount){
         amount = myamount;
         month = mymonth;
         day = myday;
