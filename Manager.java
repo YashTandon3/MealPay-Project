@@ -24,6 +24,15 @@ public class Manager {
             if(students.get(i).getID() == id){
                 students.get(i).chargeLunch(month, day);
             }
+        
+        }
+    }
+
+    public void addCash(int month, int day, int money, int id){
+        for(int i = 0; i<students.size(); i++){
+            if(students.get(i).getID() == id){
+                students.get(i).addFunds(money, month, day);
+            }
         }
     }
 

@@ -24,6 +24,13 @@ public void chargeLunch(int month, int day){
     transactions.add(t);
 }
 
+public void addFunds(int month, int day, int money){
+    balance += money;
+    Transaction t = new Transaction(month, day, money);
+    transactions.add(t);
+
+}
+
 //return null of there are no transactions on that day
 public ArrayList<Transaction> getTransactionsByDate(int month, int day){
     ArrayList<Transaction> givenDay = new ArrayList<Transaction>();
@@ -51,6 +58,6 @@ public Double getBalance(){
     return balance;
 }
     public String toString(){
-        return "Name: " + name + "ID: " + "Balance " + balance + " Transactions: " + transactions.toString();
+        return "Name: " + name + " ID: " + id + " Balance " + balance + " Transactions: " + transactions.toString();
     }
 }
