@@ -47,7 +47,9 @@ public String getName(){
     return name;
 }
 
-
+public Double getBalance(){
+    return balance;
+}
     public String toString(){
         return "Name: " + name + "ID: " + "Balance " + balance + " Transactions: " + transactions.toString();
     }

@@ -37,4 +37,11 @@ public class Manager {
         Student p = new Student(name);
         students.add(p);
     }
+    public void getallNegativeStudents(){
+        for(int i = 0; i< students.size(); i++){
+            if(students.get(i).getBalance()<0)
+            System.out.println(students.get(i).toString());
+        }
+    }
+
 }
