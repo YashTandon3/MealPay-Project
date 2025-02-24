@@ -42,6 +42,13 @@ public class Manager {
         }
     }
 
+    public void getSpecific(int id){
+        for(int i = 1; i< students.size(); i++){
+            if(students.get(i).getID() == id){
+                System.out.println(students.get(i).toString());
+        }
+    }
+    }
     public void addStudents(String name){
         Student p = new Student(name);
         students.add(p);
